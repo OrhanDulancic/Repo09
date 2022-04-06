@@ -1,12 +1,16 @@
-function logicalAndOperator(num) {
-    if (num <= 80 && num>=40) {
-        return "Yes";
+function logicalOrOperator(num) {
+    if(num < 20 || num > 30) {
+        return "Out";
     }
-    return "No";
+    return "In";
 }
 
-console.log(logicalAndOperator(0));
-console.log(logicalAndOperator(24));
-console.log(logicalAndOperator(45));
-console.log(logicalAndOperator(57));
-console.log(logicalAndOperator(100));
+console.log(logicalOrOperator(0));
+console.log(logicalOrOperator(9));
+console.log(logicalOrOperator(20));
+console.log(logicalOrOperator(23));
+console.log(logicalOrOperator(30));
+console.log(logicalOrOperator(31));
+console.log(logicalOrOperator(105));
+
+module.exports = logicalOrOperator;
